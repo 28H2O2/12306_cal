@@ -6,7 +6,8 @@
 
 # 特别感谢
 
-- **车票票** APP
+- [**车票票** APP](https://www.chepiaopiao.cn/)
+    - app上有更丰富的样式和总结
 - 邮箱自动提取参考：[飞书文档](https://thedafeige.feishu.cn/docx/XW2td4j1xoGU1hxTs9vct0Crn3b)
 
 
@@ -26,7 +27,7 @@ Python 3.7+（仅使用 Python 标准库，无需安装第三方依赖）
 
 ### 1. 准备数据文件
 
-将 12306 通知邮件导出的 txt 文件放入 `data/` 目录。
+将 12306 通知邮件导出（上文飞书文档）的 txt 文件放入 `data/` 目录。
 
 ### 2. 运行解析器
 
