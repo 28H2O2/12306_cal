@@ -2,6 +2,8 @@
 
 解析 12306 通知邮件导出的 txt 文件，生成结构化 JSON 数据和可视化 HTML 报表。
 
+![报表示例](pic/示例图片.png)
+
 ## 功能特性
 
 - 自动解析购票、退票、改签、候补兑现等多种票务事件
@@ -47,8 +49,6 @@ python3 scripts/parse_12306.py --input-dir data --output out
 - `out/by_file/<文件名>/` - 每个 txt 文件单独一份数据（含独立报表）
 
 ## 报表功能
-
-![报表示例](pic/示例图片.png)
 
 打开 `report.html` 后可以：
 
