@@ -4,6 +4,12 @@
 
 ![报表示例](pic/示例图片.png)
 
+# 特别感谢
+
+- **车票票** APP
+- 邮箱自动提取参考：[飞书文档](https://thedafeige.feishu.cn/docx/XW2td4j1xoGU1hxTs9vct0Crn3b)
+
+
 ## 功能特性
 
 - 自动解析购票、退票、改签、候补兑现等多种票务事件
@@ -88,7 +94,3 @@ python3 scripts/parse_12306.py --input-dir data --output out
 2. 重新运行解析器：`python3 scripts/parse_12306.py --input-dir data --output out`
 3. 所有数据会自动合并，并生成新的报表
 
-## 致谢
-
-- **车票票** APP
-- 邮箱自动提取参考：[飞书文档](https://thedafeige.feishu.cn/docx/XW2td4j1xoGU1hxTs9vct0Crn3b)
