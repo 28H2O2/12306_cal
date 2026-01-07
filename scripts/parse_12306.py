@@ -1045,6 +1045,13 @@ def build_report_html(tickets: List[Dict[str, Any]], events: List[Dict[str, Any]
     return map[k] || k;
   }};
 
+  const getFileName = (path) => {{
+    if (!path) return '-';
+    // 处理 Unix 和 Windows 路径分隔符
+    const parts = path.replace(/\\\\/g, '/').split('/');
+    return parts[parts.length - 1];
+  }};
+
   function parseDepartDate(t) {{
     // departDateTime: YYYY-MM-DDTHH:mm
     const dt = t.departDateTime;
@@ -1207,7 +1214,7 @@ def build_report_html(tickets: List[Dict[str, Any]], events: List[Dict[str, Any]
               <div>办理日期：${{safe(t.transactionDate) || '-'}}</div>
               <div>邮件日期：${{safe(t.mailDate) || '-'}}</div>
               <div>检票口：${{safe(t.checkInGate) || '-'}}</div>
-              <div>来源：${{safe(t.sourceFile)}} (L${{safe(t.sourceStartLine)}}-L${{safe(t.sourceEndLine)}})</div>
+              <div style="white-space: nowrap;">来源：${{getFileName(safe(t.sourceFile))}} (L${{safe(t.sourceStartLine)}}-L${{safe(t.sourceEndLine)}})</div>
             </div>
           </details>
         </td>
