@@ -644,6 +644,8 @@ def _ticket_match_key(t: Dict[str, Any]) -> Tuple:
         t.get("fromStation"),
         t.get("toStation"),
         t.get("trainNo"),
+        t.get("seatType"),
+        t.get("priceYuan"),
     )
 
 
